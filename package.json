@@ -1,0 +1,30 @@
+{
+  "name": "qiankun-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-run-all --serial install:*",
+    "install:main": "cd basic-vue-app && yarn install",
+    "install:sub-vue": "cd micro-vue-app2 && npm install",
+    "install:sub-react": "cd micro-react-app && yarn install",
+    "dev": "npm-run-all --serial dev:*",
+    "dev:main": "cd basic-vue-app && yarn dev",
+    "dev:sub-vue": "cd micro-vue-app2 && npm run dev",
+    "dev:sub-react": "cd micro-react-app && yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skywalk94/qiankun-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skywalk94/qiankun-demo/issues"
+  },
+  "homepage": "https://github.com/skywalk94/qiankun-demo#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
